@@ -1,0 +1,212 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial,Sans-serif;
+  letter-spacing: 1px;
+}
+.navigation{
+  display: flex;
+  justify-content: space-around;
+  background-color: #555555;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #111;
+}
+
+.active {
+background-color: #04AA6D;
+}
+.left-nav ul li{
+  color:white;
+}
+
+
+
+/* nav bar ends */
+.main-content{
+  width: 50%;
+  margin:auto;
+  display: flex;
+  justify-content: space-around;
+  border:1px solid gainsboro;
+  /* margin: 50px 600px 0 600px; */
+  padding: 25px 70px 25px 70px;
+  border-radius: 10px;
+}
+.logo-image img{
+  width: 100px;
+  border: 3px solid gainsboro;
+  
+}
+.stated{
+  margin-top: 30px;
+  margin-left: 40px;
+}
+.salary i{
+  margin-right: 10px;
+}
+.new{
+  color: #622365;
+  font-weight: bold;
+  margin-left:20px;
+}
+.job-title{
+  margin-bottom: 20px;
+}
+.comany-location-wrapper, .salary{
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+.company-name i{
+  margin-right: 10px;
+}
+.company-name{
+  margin-right: 15px;
+}
+.location i{
+  margin-right: 10px;
+}
+.desc{
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+/* detail page start */
+.detail-page-start{
+  position: relative;
+  width: 70%;
+  margin: 30px auto 30px;
+  box-shadow: 0px 0px 5px #00000030;
+  padding:30px 0;
+  
+}
+.image-group img{
+  width: 30%;
+  margin-left: 30px;
+}
+.comp-logo img{
+  border:2px solid black;
+  width:170px;
+  position: absolute;
+  top: 200px;
+  left:140px;
+}
+/* .role{
+  margin-top:150px;
+  margin-left: 90px;
+} */
+.main-desc{
+  width: 79%;
+  margin: 100px auto 0;
+}
+.main-desc h2, .main-desc p{
+  margin-bottom: 15px;
+}
+.main-desc hr{
+  color:#d7c4c4;
+  box-shadow: 0px 0px 5px #00000030;
+
+}
+.apply-button, .below-apply-button{
+  margin-top:20px;
+  display: flex;
+  justify-content: space-between;
+}
+.apply-button button, .below-apply-button button{
+  padding: 12px 30px;
+  font-weight: bold;
+  border: 1px solid rgb(48, 46, 46);
+}
+.apply-button .create button, .apply-button .save button{
+  background-color: white;
+  border-radius: 4px;
+}
+.apply-button .apply button, .below-apply-button .apply button{
+  background-color: #924199;
+  border-radius: 4px;
+  padding: 12px 80px;
+  color: white;
+}
+.detailed-desc{
+  width: 50%;
+  margin:60px auto 0;
+}
+.detailed-desc p{
+  line-height: 2;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+.below-apply-button{
+  width: 79%;
+  margin:auto;
+}
+button{
+  background-color: red;
+}
+@media only screen and (max-width: 1298px) {
+  .main-content{
+      width: 80%;
+      margin:auto;
+      
+  }
+  .logo-image img{
+      width: 80px;
+      border: 2px solid gainsboro;
+  }    
+  .stated{
+  margin-top: 30px;
+  margin-left: 40px;
+}
+  .stated i{
+      font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 618px) {
+  .main-content{
+      width: 100%;
+      margin:auto;
+      
+      
+  }
+  .comany-location-wrapper{
+      display: block;
+
+  }
+  .comany-location-wrapper .company-name{
+      margin-bottom: 15px;
+  }
+  .left-part{
+      font-size:12px;
+  }
+  .logo-image img{
+      width: 60px;
+      border: 1px solid gainsboro;
+  }   
+  .stated i{
+      font-size: 15px;
+  } 
+
+}
